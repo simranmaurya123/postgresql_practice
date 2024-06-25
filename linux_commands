@@ -1,0 +1,54 @@
+# linux commands 
+
+command for listing the directories
+ls
+
+comman
+
+# to list files and directories in the ~/Desktop directory with details.
+
+"""
+to list files and directories in the ~ directory with 
+details and hidden files.
+Tips: Hidden files and directories are files and 
+directories that start with a . (dot).
+
+"""
+ls -la ~
+
+"""
+-a is a flag that tells the ls command to list all files and directories, including hidden files and directories.
+
+"""
+-----------------------------------------------------------------
+
+"""
+to list files and directories in the ~ directory with details and hidden files and sort by size.
+
+"""
+
+ls -las ~
+
+#-s is a flag that tells the ls command to sort by file size
+
+
+
+# to change the current working directory to the root directory.
+
+cd /
+ls
+
+#/ is the root directory
+
+#to change the current working directory to previous directory
+
+cd -
+ls
+
+
+#to change the current working directory to the home directory. 
+
+cd ~
+ls
+
+
