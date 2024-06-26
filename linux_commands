@@ -2,14 +2,10 @@
 
 command for listing the directories
 ls
-
-
-#the following example shows how to list files and directories in the ~/Desktop directory.
-
+-------------------------------------------------------------
+#to list files and directories in the ~/Desktop directory.
 ls ~/Desktop
 
-
-# to list files and directories in the ~/Desktop directory with details.
 --------------------------------------------------------------------
 """
 to list files and directories in the ~ directory with 
@@ -19,32 +15,24 @@ directories that start with a . (dot).
 
 """
 ls -la ~
-
-
-
 """
 -a is a flag that tells the ls command to list all files and directories, including hidden files and directories.
 
 """
 ----------------------------------------------------------------------
 
-"""
-to list files and directories in the ~ directory with details and hidden files and sort by size.
-
-"""
-
+#to list files and directories in the ~ directory with details and hidden files and sort by size.
 ls -las ~
 
 #(-S)is a flag that tells the ls command to sort by file size
 ----------------------------------------------------------------------
 
 """
-The following example shows how to list files and directories in the ~ directory with details and hidden files in reverse order and sort by size and human-readable
+to list files and directories in the ~ directory with details and hidden files in reverse order and sort by size and human-readable
 
 -h is a flag that tells the ls command to print sizes in human-readable format.
 
 """
-
 ls -laSh ~
 
 ----------------------------------------------------------------------
