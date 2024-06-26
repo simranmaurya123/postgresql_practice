@@ -3,10 +3,14 @@
 command for listing the directories
 ls
 
-comman
+
+#the following example shows how to list files and directories in the ~/Desktop directory.
+
+ls ~/Desktop
+
 
 # to list files and directories in the ~/Desktop directory with details.
-
+--------------------------------------------------------------------
 """
 to list files and directories in the ~ directory with 
 details and hidden files.
@@ -16,11 +20,13 @@ directories that start with a . (dot).
 """
 ls -la ~
 
+
+
 """
 -a is a flag that tells the ls command to list all files and directories, including hidden files and directories.
 
 """
-
+----------------------------------------------------------------------
 
 """
 to list files and directories in the ~ directory with details and hidden files and sort by size.
@@ -30,6 +36,18 @@ to list files and directories in the ~ directory with details and hidden files a
 ls -las ~
 
 #(-S)is a flag that tells the ls command to sort by file size
+----------------------------------------------------------------------
+
+"""
+The following example shows how to list files and directories in the ~ directory with details and hidden files in reverse order and sort by size and human-readable
+
+-h is a flag that tells the ls command to print sizes in human-readable format.
+
+"""
+
+ls -laSh ~
+
+----------------------------------------------------------------------
 
 
 # to change the current working directory to the root directory.
@@ -38,15 +56,77 @@ cd /
 ls
 
 #(/) is the root directory
+----------------------------------------------------------------------
 
 #to change the current working directory to previous directory
 
 cd -
 ls
 
+----------------------------------------------------------------------
 #to change the current working directory to the home directory. 
 
 cd ~
 ls
+--------------------------------------------------------------------------------------------
 
+#change the current directory
+
+cd dir_name
+---------------------------------------------------------------------------------------------
+#creates a new directory
+mkdir simran
+---------------------------------------------------------------------------------------------
+#remove a directory
+rmdir simran
+----------------------------------------------------------------------------------------------
+#print the current working directory
+pwd
+----------------------------------------------------------------------------------------------
+#We will copy a file called example.txt from the current directory to a directory called backup
+cp example.txt backup/
+-----------------------------------------------------------------------------------------------
+#removes files or directory
+rm example.txt
+---------------------------------------------------------------------
+# Ceates a new empty file or update the timestamp of an existing file
+touch maira.txt
+---------------------------------------------------------------------
+# concatenate andd display files
+cat hello.txt
+---------------------------------------------------------------------
+#manual for a command
+man ls
+--------------------------------------------------------------------
+#an interactive process viewer and system monitor
+htop
+--------------------------------------------------------------------
+#change the permissions of a file or directory
+# The first digit represents the owner of the file/directory
+# The second digit represents the group that the file/directory belongs to
+# The third digit represents all other users
+# 0 (no permission)
+# 1 (execute only)
+# 2 (write only)
+# 3 (write and execute)
+# 4 (read only)
+# 5 (read and execute)
+# 6 (read and write)
+# 7 (read, write, and execute)
+
+chmod 700 file.txt
+----------------------------------------------------------------
+#change the owner of a file or directory
+chown new_owner hello.txt
+----------------------------------------------------------------
+#create or extract compressed archive files
+# x: extract files from an archive
+# t: list the contents of an archive
+# r: append files to an existing archive
+# z: use gzip compression
+# j: use bzip2 compression
+# cf: create file
+#xf: extract file
+
+tar cf archive.tar file1 file2 file3
 
